@@ -1,0 +1,16 @@
+.footer{
+    height: 112px;
+    background-color:$footer__bgcolor;
+    &>.container{
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__link{
+        text-transform: capitalize;
+        &:hover{
+            color: $footer__color-link-hover;
+        }
+    }
+}

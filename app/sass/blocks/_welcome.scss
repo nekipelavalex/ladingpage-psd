@@ -1,0 +1,35 @@
+.welcome{
+    background-color: $welcome__bgcolor;
+    min-height: 596px;
+    padding: 60px 0 0 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu{
+        &-list{
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;   
+        }
+        &-item{
+            height: 32px;
+            width: 77px;
+            padding-top: 2px;
+            &:hover{
+                border-radius: 4px;
+                background-color: $welcome__bgcolor-item-hover;
+            }
+        }
+        &-link{
+            color: $welcome__color-link;
+            text-transform: uppercase;
+        }
+    }
+    &__text{
+        margin-top: 184px;
+        margin-bottom: 62px;
+        font-size: 23px;
+    }
+}

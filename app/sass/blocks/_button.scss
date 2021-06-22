@@ -1,0 +1,13 @@
+.button{
+    height: 70px;
+    width: 293px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    &_orange{
+        background-color: #eb7d4b;
+    }
+    &_sky{
+        background-color: #30bae7;
+        color: #fff;
+    }
+}

@@ -1,0 +1,83 @@
+.service{
+    padding: 120px 0 130px 0;
+    min-height: 748px;
+    background-color: $service__bgcolor;
+    &>.container>.divider{        
+        background-color: $service__bgcolor-divider;
+    }
+    &__items{   
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(4,298px);
+        // column-gap: 90px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-img{
+            position: relative;
+            height: 125px;
+        }
+        &>.title{
+            margin-top: 62px;
+            margin-bottom: 0;
+        }
+        &>p{
+            margin-top: 28px;
+            margin-bottom: 0;
+            max-width: 200px;
+        }
+    }
+    &__flag{
+        &-stick{
+            width: 124px;
+            height: 10px;
+            top: 46%;
+            right: 30px;
+            background-color: $service__bgcolor-flag-stick;
+            border-radius: 4px;
+            position: relative;
+            transform: rotateZ(75deg);
+        }
+        &-canvas{
+            position: relative;
+            width: 0;
+            height: 0;
+            left: 39px;
+            z-index: 1;
+            border-top: 62px solid $service__bgcolor-flag-canvas;
+            border-right: 44px solid transparent;
+            background-color: $service__bgcolor-flag-canvas;
+            &::before{
+                content: "";
+                position: absolute;                
+                width: 0;
+                height: 0;
+                top: -62px;
+                right: 0;
+                border-top: 62px solid $service__bgcolor-flag-canvas;
+                border-left: 17px solid transparent;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                left: 27px;
+                z-index: 1;
+                border-top:11px solid $service__bgcolor-flag-canvas-after;
+                border-right: 17px solid transparent;
+            }
+            &_bottom{
+                position: relative;
+                width: 0;
+                height: 0;
+                left: 67px;
+                bottom: 50px;
+                border-width: 45px 30px 16px;
+                border-color: $service__bgcolor-flag-canvas-bottom $service__bgcolor-flag-canvas-bottom transparent;
+                border-style: solid;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}

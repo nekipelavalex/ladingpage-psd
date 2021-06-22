@@ -1,0 +1,8 @@
+.portfolio{
+    background-color: $portfolio__bgcolor;
+    min-height: 800px;
+    padding: 120px 0 110px 0;
+    &>.container>.divider{
+        background-color: $portfolio__bgcolor-divider;
+    }
+}
