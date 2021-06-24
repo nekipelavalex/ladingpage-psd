@@ -2,7 +2,48 @@
     background-color: $portfolio__bgcolor;
     min-height: 800px;
     padding: 120px 0 110px 0;
-    &>.container>.divider{
-        background-color: $portfolio__bgcolor-divider;
+    &>.container{
+        &>.divider{
+            background-color: $portfolio__bgcolor-divider;
+        }
+        &>button{
+            margin-top: 20px;
+        }
+    }
+    &__tabs{
+        list-style-type: none;
+        margin-top: 46px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__tab{
+        text-transform: uppercase;
+        height: 38px;
+        width: 84px;
+        margin: 0 5px;
+        background-color: $portfolio__bgcolor-tab;
+        border-radius: 4px;
+        line-height: 36px;
+        cursor: pointer;
+        &_active{
+            background-color: $portfolio__bgcolor-tab-active;
+        }
+    }
+    &__content{
+        margin-top: 36px;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &_active{
+            display: flex;
+        }
+    }
+    &__item{
+        &-subtitle{
+            margin-top: 28px;
+            margin-bottom: 66px;
+        }
     }
 }
