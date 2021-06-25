@@ -80,25 +80,103 @@
             }
         }
     }
-    &__pinion{
-        position: relative;
-        background: #487fbc;
-        width: 98px;
-        height: 98px;
-        margin: 14px;
-        transform: rotate(45deg);
-        border-radius: 20px;
-        &::after{
-            content: "";
-            position: absolute;
-            background: inherit;
-            width: 98px;
-            height: 98px;
-            margin: 0px;
-            top: 0;
-            left: 0;
-            transform: rotate(45deg);
-            border-radius: 20px;
+    &__pen{
+        &-angle{
+            position: relative;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 46px solid #ffecba;
+            border-radius: 50%;
+            transform: rotate(30deg);
+            top: 82px;
+            right: 18px;
+            &::after{
+                content: "";
+                position: absolute;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 12px solid #393939;
+                bottom: 0;
+                left: -10px;
+            }
+        }
+        &-tree{
+            position: relative;
+            height: 23px;
+            width: 77px;
+            background-color: #f1c40f;
+            z-index: 1;
+            transform: rotate(-60deg);
+            &::before{
+                content: "";
+                position: absolute;
+                height: 23px;
+                width: 77px;
+                top: 23px;
+                right: 0;
+                background-color: #f39c12;
+                z-index: 1;
+            }
+        }
+        &-end{
+            position: relative;
+            height: 23px;
+            width: 22px;
+            left: 52px;
+            bottom: 66px;
+            background-color: #daeaf2;
+            transform: rotate(-60deg);
+            &::before{
+                content: "";
+                position: absolute;
+                height: 23px;
+                width: 22px;
+                top: 23px;
+                right: 0;
+                background-color: #bedae8;
+            }
+        }
+        &-wash{
+            position: relative;
+            width: 23px;
+            height: 23px;
+            bottom: 87%;
+            left: 78%;
+            background-color: #e88f8d;
+            border-top-left-radius: 100%;
+            transform: rotate(30deg);
+            &::before{
+                content: "";
+                position: absolute;
+                height: 23px;
+                width: 23px;
+                left: 23px;
+                top: 0;
+                background-color: #d97475;
+                border-top-right-radius: 100%;
+            }
         }
     }
+
+    // &__pinion{
+    //     position: relative;
+    //     background: #487fbc;
+    //     width: 98px;
+    //     height: 98px;
+    //     margin: 14px;
+    //     transform: rotate(45deg);
+    //     border-radius: 20px;
+    //     &::after{
+    //         content: "";
+    //         position: absolute;
+    //         background: inherit;
+    //         width: 98px;
+    //         height: 98px;
+    //         margin: 0px;
+    //         top: 0;
+    //         left: 0;
+    //         transform: rotate(45deg);
+    //         border-radius: 20px;
+    //     }
+    // }
 }
